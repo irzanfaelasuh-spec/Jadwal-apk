@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07090f">
+<title>ClassPulse • 9C</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"><i></i><i></i><i></i></div>
+<main>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">CLASS PULSE / 9C</div>
+      <h1>School <span>Reminder</span></h1>
+    </div>
+    <button id="soundBtn" class="iconBtn" aria-label="Suara">🔔</button>
+  </header>
+
+  <section class="hero glass">
+    <div class="heroGlow"></div>
+    <div class="dayRow">
+      <div>
+        <div id="todayLabel" class="muted">HARI INI</div>
+        <div id="dayName" class="dayName">—</div>
+      </div>
+      <div id="clock" class="clock">20:00</div>
+    </div>
+    <div class="reminder">
+      <div class="pulse"></div>
+      <div>
+        <div class="muted">PENGINGAT BERESIN BUKU</div>
+        <strong id="reminderState">Menunggu pukul 20:00</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="glass scheduleCard">
+    <div class="sectionHead">
+      <div>
+        <div class="muted">JADWAL HARI INI</div>
+        <h2 id="scheduleTitle">—</h2>
+      </div>
+      <span id="activeBadge" class="badge">AKTIF</span>
+    </div>
+    <div id="subjects" class="subjects"></div>
+  </section>
+
+  <section class="glass settings">
+    <div class="setting">
+      <div><b>Pengingat 20:00</b><small>Aktif Senin–Jumat. Sabtu–Minggu otomatis nonaktif.</small></div>
+      <button id="toggleBtn" class="switch on"><span></span></button>
+    </div>
+    <div class="setting">
+      <div><b>Nada dering</b><small>Suara pengingat bisa dimatikan kapan saja.</small></div>
+      <button id="soundToggle" class="switch on"><span></span></button>
+    </div>
+  </section>
+
+  <button id="testBtn" class="testBtn">▶ Tes pengingat sekarang</button>
+  <p class="foot">Reminder • 20:00 • Senin–Jumat</p>
+</main>
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal">
+  <div class="modalBox glass">
+    <div class="modalIcon">📚</div>
+    <div class="muted">WAKTUNYA SIAP-SIAP</div>
+    <h2 id="modalTitle">Beresin buku!</h2>
+    <p id="modalText"></p>
+    <button id="closeModal">Siap</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
